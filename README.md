@@ -1,1 +1,1 @@
-# self-ordering-kiosk-in-javaFx
+A self-ordering kiosk is an interactive system designed to streamline the ordering process in various retail environments, such as restaurants, cafes, and fast food chains. Built using JavaFX, a powerful framework for building desktop applications in Java, the kiosk provides a user-friendly and visually appealing interface for customers to place their orders independently. Here’s a comprehensive description of a self-ordering kiosk created with JavaFX:
