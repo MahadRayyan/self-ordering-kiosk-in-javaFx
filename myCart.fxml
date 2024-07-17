@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo3.myCartController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <Label layoutX="193.0" layoutY="372.0" prefHeight="21.0" prefWidth="60.0" text="TOTAL:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="menuTotal" layoutX="250.0" layoutY="372.0" prefHeight="21.0" prefWidth="102.0" text="PKR 0.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="177.0" layoutY="402.0" prefHeight="21.0" prefWidth="73.0" text="AMOUNT:" AnchorPane.bottomAnchor="177.0" AnchorPane.leftAnchor="177.0" AnchorPane.topAnchor="402.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="menuAmount" layoutX="250.0" layoutY="400.0" text="RS" />
+            <Button fx:id="menuPay" layoutX="12.0" layoutY="472.0" mnemonicParsing="false" onAction="#handlePayButtonAction" prefHeight="50.0" prefWidth="478.0" text="PAY" />
+            <Button fx:id="MenuRemove" layoutX="15.0" layoutY="530.0" mnemonicParsing="false" onAction="#handleRemoveButtonAction" prefHeight="50.0" prefWidth="229.0" text="REMOVE" />
+            <Button fx:id="menuRecipt" layoutX="254.0" layoutY="530.0" mnemonicParsing="false" onAction="#switchToScene2" prefHeight="50.0" prefWidth="229.0" text="MAIN MENU" />
+            <ListView fx:id="cartListView" layoutX="3.0" layoutY="2.0" prefHeight="342.0" prefWidth="490.0" />
+            <Label fx:id="menuChange" alignment="CENTER" layoutX="86.0" layoutY="441.0" prefHeight="21.0" prefWidth="351.0">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
